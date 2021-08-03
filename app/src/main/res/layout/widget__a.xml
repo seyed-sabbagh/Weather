@@ -1,0 +1,44 @@
+<!--
+  ~ /**
+  ~  * Created by Seyed on 8/3/21, 6:23 PM
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 8/3/21, 6:03 PM
+  ~  */
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/widget_margin"
+>
+
+    <TextView
+            android:id="@+id/appwidget_text_temp"
+            android:layout_height="wrap_content"
+            android:text="20°"
+            android:textColor="#ffffff"
+            android:textSize="50sp"
+            android:background="#FF000000"
+            android:fontFamily="@font/gotham_medium" android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:visibility="visible"
+            android:layout_marginTop="13dp" android:layout_marginStart="14dp" android:layout_width="wrap_content"
+            android:layout_alignParentStart="true" android:layout_alignParentTop="true"
+            android:paddingBottom="5dp" android:paddingRight="5dp"
+    />
+    <TextView
+            android:id="@+id/appwidget_text_description"
+            android:text="#sunny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFF"
+            android:textColor="#000" android:fontFamily="@font/gotham_bold"
+            android:textSize="20sp"
+            android:paddingStart="5dp" android:paddingEnd="5dp"
+            android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="visible"
+            android:layout_marginStart="39dp" android:layout_alignParentStart="true"
+            android:layout_marginTop="0dp" android:layout_below="@+id/appwidget_text_temp"
+    />
+
+</RelativeLayout>

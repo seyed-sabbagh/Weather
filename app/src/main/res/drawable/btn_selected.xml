@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ /**
+  ~  * Created by Seyed on 8/3/21, 6:23 PM
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 8/3/21, 6:03 PM
+  ~  */
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid
+            android:color = "#242222" />
+    <stroke
+        android:color="#1ED760" android:width = "0dp"
+    />
+    <corners
+            android:radius="10dp"
+    />
+
+</shape>

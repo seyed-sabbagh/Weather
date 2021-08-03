@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Seyed on 8/3/21, 6:23 PM
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 8/3/21, 6:03 PM
+  ~  */
+  -->
+
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+       android:fromAlpha="0.0"
+       android:toAlpha="1.0"
+       android:duration="1600"
+       android:repeatMode="reverse"
+/>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Seyed on 8/3/21, 6:23 PM
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 8/3/21, 6:03 PM
+  ~  */
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.seyed.weather">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/icon"
+            android:label="Weather"
+            android:roundIcon="@mipmap/icon"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+
+        <receiver android:name="com.seyed.weather.Widgets.Widget_rough">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/widget_d_info"/>
+        </receiver>
+        <receiver android:name="com.seyed.weather.Widgets.Widget_cute">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/widget_c_info"/>
+        </receiver>
+        <receiver android:name="com.seyed.weather.Widgets.Widget_gradient">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/widget_b_info"/>
+        </receiver>
+        <receiver android:name="com.seyed.weather.Widgets.Widget_insta">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/widget__a_info"/>
+        </receiver>
+
+        <activity android:name="com.seyed.weather.Activities.SetupActivity">
+        </activity>
+        <activity android:name="com.seyed.weather.Activities.OptionsActivity">
+        </activity>
+        <activity
+                android:name="com.seyed.weather.Activities.MainActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.seyed.weather.Services.ReminderBroadcast"/>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
+    </application>
+
+</manifest>

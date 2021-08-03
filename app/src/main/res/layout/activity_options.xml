@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Seyed on 8/3/21, 6:23 PM
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 8/3/21, 6:03 PM
+  ~  */
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.OptionsActivity" android:background="#101010"
+        android:id="@+id/cl_main">
+
+    <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/circular_reveal"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            android:background="#101010" android:visibility="gone"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="58dp"
+            android:background="#1B1B1B"
+            android:id="@+id/constraintLayout2"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+                android:layout_width="23dp"
+                android:layout_height="20dp"
+                android:id="@+id/btn_back_from_options" android:layout_weight="1"
+                android:background="@drawable/abc_vector_test"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="22dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="17dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="20dp" app:layout_constraintVertical_bias="0.857"/>
+        <TextView
+                android:text="Options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:fontFamily="@font/gotham_bold" android:textSize="15sp" android:textColor="#FFFFFF"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="22dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="22dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" android:id="@+id/scrollView3">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:visibility="visible"
+                    android:id="@+id/cl_characters"
+                    android:layout_marginTop="1dp" app:layout_constraintTop_toBottomOf="@+id/constraintLayout9">
+
+                <TextView
+                        android:text="Here you can choose who do you want to show you the weather forecast"
+                        android:layout_width="348dp"
+                        android:layout_height="55dp" android:id="@+id/textView1043"
+                        android:fontFamily="@font/gotham_book"
+                        android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView943"
+                        android:textSize="12.5sp" app:layout_constraintStart_toStartOf="parent"
+                        android:lineSpacingExtra="4sp" app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.301"/>
+                <TextView
+                        android:text="Pick ur character"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView943"
+                        android:textColor="#FFFFFF" android:fontFamily="@font/gotham_medium"
+                        android:textSize="15sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/textView13"/>
+                <TextView
+                        android:text="Meteorologists"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView13"
+                        android:textColor="#FFFFFF" android:fontFamily="@font/gotham_medium"
+                        android:textSize="17sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="40dp"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/textView1043"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:id="@+id/constraintLayout8">
+
+                    <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent" android:orientation="horizontal"
+                            android:id="@+id/rg_character">
+                        <RadioButton
+                                android:text="GNOME"
+                                android:layout_width="123dp"
+                                android:layout_height="42dp" android:id="@+id/rb_gnome"
+                                android:background="@drawable/bgrate" android:button="@android:color/transparent"
+                                android:textAlignment="center" android:fontFamily="@font/gotham_medium"
+                                android:layout_weight="1" android:layout_marginRight="10dp"
+                                android:layout_marginLeft="17dp" android:textColor="@drawable/radio_text_colors"
+                                android:checked="false"/>
+                        <RadioButton
+                                android:text="ALIEN"
+                                android:layout_width="89dp"
+                                android:layout_height="42dp" android:id="@+id/rb_alien"
+                                android:background="@drawable/bgrate" android:button="@android:color/transparent"
+                                android:textAlignment="center" android:fontFamily="@font/gotham_medium"
+                                android:textColor="@drawable/radio_text_colors" android:checked="true"/>
+                    </RadioGroup>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:visibility="visible"
+                    android:id="@+id/constraintLayout19" app:layout_constraintTop_toBottomOf="@+id/cl_characters">
+
+                <CheckBox
+                        android:layout_width="31dp"
+                        android:layout_height="34dp" android:id="@+id/cb_widgets"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="90dp"
+                        android:theme="@style/MyEditTextTheme"
+                        app:layout_constraintStart_toEndOf="@+id/textView10435"/>
+                <TextView
+                        android:text="You can Show/Hide the widgets  layout from your app's main page"
+                        android:layout_width="312dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView10435"
+                        android:fontFamily="@font/gotham_book"
+                        android:layout_marginTop="10dp" app:layout_constraintTop_toBottomOf="@+id/textView9435"
+                        android:textSize="12.5sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" android:lineSpacingExtra="4sp"/>
+                <TextView
+                        android:text="Widgets module"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView9435"
+                        android:textColor="#FFFFFF" android:fontFamily="@font/gotham_medium"
+                        android:textSize="15sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp"
+                        android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/textView135"/>
+                <TextView
+                        android:text="Layouts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView135"
+                        android:textColor="#FFFFFF" android:fontFamily="@font/gotham_medium"
+                        android:textSize="17sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="40dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:id="@+id/constraintLayout3"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                        android:text="Change location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView"
+                        android:fontFamily="@font/gotham_medium" android:textSize="17sp"
+                        android:textColor="#ffffff" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="30dp"/>
+                <EditText
+                        android:layout_width="234dp"
+                        android:layout_height="48dp"
+                        android:inputType="textPersonName"
+                        android:ems="18"
+                        android:id="@+id/et_location"
+                        android:textSize="15sp" android:fontFamily="@font/gotham_medium"
+                        android:textColor="#8B8B8B" app:layout_constraintTop_toBottomOf="@+id/textView"
+                        android:layout_marginTop="20dp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp"
+                        android:theme="@style/MyEditTextTheme" android:background="@drawable/options_btn_style"
+                        android:textAlignment="center"/>
+                <Button
+                        android:text="Apply"
+                        android:layout_width="96dp"
+                        android:layout_height="45dp" android:id="@+id/btn_apply_options"
+                        android:background="@drawable/options_btn_style"
+                        android:textColor="@android:color/black" app:layout_constraintTop_toBottomOf="@+id/textView"
+                        android:layout_marginTop="20dp" app:layout_constraintStart_toEndOf="@+id/et_location"
+                        android:layout_marginStart="15dp" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="20dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" android:id="@+id/constraintLayout4"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                        android:text="Choose Metric to see temperature in Celsius and Imperial - for Fahrenheits"
+                        android:layout_width="234dp"
+                        android:layout_height="49dp" android:id="@+id/textView1044"
+                        android:fontFamily="@font/gotham_book"
+                        android:layout_marginTop="10dp" app:layout_constraintTop_toBottomOf="@+id/textView944"
+                        android:textSize="12.5sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" android:lineSpacingExtra="4sp"/>
+                <TextView
+                        android:text="Unit system"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView944"
+                        android:textColor="#FFFFFF" android:fontFamily="@font/gotham_medium"
+                        android:textSize="15sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="15dp"/>
+                <Spinner
+                        android:layout_width="128dp"
+                        android:layout_height="34dp"
+                        android:id="@+id/s_units" app:layout_constraintTop_toBottomOf="@+id/textView944"
+                        android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="20dp" app:layout_constraintStart_toEndOf="@+id/textView1044"
+                        android:layout_marginStart="10dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" android:id="@+id/constraintLayout5"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                        android:text="Annoying notifications every morning, no matter how the weather looks like, you'll know the details."
+                        android:layout_width="312dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView101"
+                        android:fontFamily="@font/gotham_book"
+                        android:layout_marginTop="10dp" app:layout_constraintTop_toBottomOf="@+id/textView91"
+                        android:textSize="12.5sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" android:lineSpacingExtra="4sp"
+                        app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"/>
+                <TextView
+                        android:text="Notifications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView3"
+                        android:fontFamily="@font/gotham_medium" android:textSize="17sp"
+                        android:textColor="#ffffff" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="40dp"/>
+                <TextView
+                        android:text="Daily Overview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView91"
+                        android:textColor="#FFFFFF" android:fontFamily="@font/gotham_medium"
+                        android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/textView3"
+                        android:textSize="15sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp"/>
+                <CheckBox
+                        android:layout_width="31dp"
+                        android:layout_height="34dp" android:id="@+id/cb_daily"
+                        android:layout_marginTop="40dp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" app:layout_constraintEnd_toEndOf="parent"
+                        android:theme="@style/MyEditTextTheme" app:layout_constraintStart_toEndOf="@+id/textView101"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" android:id="@+id/constraintLayout6"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                        android:text="You will receive this type of notification only if the next day it's going to rain."
+                        android:layout_width="312dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView102"
+                        android:fontFamily="@font/gotham_book"
+                        android:layout_marginTop="10dp" app:layout_constraintTop_toBottomOf="@+id/textView92"
+                        android:textSize="12.5sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" android:lineSpacingExtra="4sp"
+                        app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"/>
+                <TextView
+                        android:text="Rain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView92"
+                        android:textColor="#FFFFFF" android:fontFamily="@font/gotham_medium"
+                        android:textSize="15sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="15dp"/>
+                <CheckBox
+                        android:layout_width="31dp"
+                        android:layout_height="34dp" android:id="@+id/cb_rain"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="30dp"
+                        android:theme="@style/MyEditTextTheme" app:layout_constraintStart_toEndOf="@+id/textView102"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout6"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/constraintLayout7">
+
+                <TextView
+                        android:text="If the next day the temperature will be significantly cooler or warmer you will get an alert."
+                        android:layout_width="312dp"
+                        android:layout_height="wrap_content" android:id="@+id/textView103"
+                        android:fontFamily="@font/gotham_book"
+                        android:layout_marginTop="10dp" app:layout_constraintTop_toBottomOf="@+id/textView93"
+                        android:textSize="12.5sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" android:lineSpacingExtra="4sp"
+                        app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"/>
+                <TextView
+                        android:text="Low/High temperatures"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView93"
+                        android:textColor="#FFFFFF" android:fontFamily="@font/gotham_medium"
+                        android:textSize="15sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="15dp"/>
+                <CheckBox
+                        android:layout_width="31dp"
+                        android:layout_height="34dp" android:id="@+id/cb_temp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="35dp"
+                        android:theme="@style/MyEditTextTheme" app:layout_constraintStart_toEndOf="@+id/textView103"
+                />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout7"
+                    android:id="@+id/constraintLayout9">
+
+                <TextView
+                        android:text="Well, I suggest that you keep it turned off (Just my preference, you do whatever you want)"
+                        android:layout_width="312dp"
+                        android:layout_height="50dp" android:id="@+id/textView104"
+                        android:fontFamily="@font/gotham_book"
+                        android:layout_marginTop="10dp" app:layout_constraintTop_toBottomOf="@+id/textView94"
+                        android:textSize="12.5sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" android:lineSpacingExtra="4sp"/>
+                <TextView
+                        android:text="Notification sound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView94"
+                        android:textColor="#FFFFFF" android:fontFamily="@font/gotham_medium"
+                        android:textSize="15sp" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="15dp"/>
+                <CheckBox
+                        android:layout_width="31dp"
+                        android:layout_height="34dp" android:id="@+id/cb_sound"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="45dp"
+                        android:theme="@style/MyEditTextTheme" app:layout_constraintStart_toEndOf="@+id/textView104"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout19"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="60dp">
+
+                <TextView
+                        android:text="Version: July 2021\nAuthor: Andrii Bobchuk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView18"
+                        android:fontFamily="@font/gotham_book"
+                        android:textSize="12.5sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView16" android:lineSpacingExtra="6dp"/>
+                <TextView
+                        android:text="About"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView17"
+                        android:fontFamily="@font/gotham_medium"
+                        android:textColor="@color/colorWhite" android:textSize="17sp"
+                        app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" android:layout_marginTop="40dp"/>
+                <TextView
+                        android:text="Best weather app ever"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView16"
+                        android:fontFamily="@font/gotham_medium"
+                        android:textColor="@color/colorWhite" android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="19dp" android:layout_marginTop="20dp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView17"/>
+                <Button
+                        android:text="Privacy Policy"
+                        android:layout_width="186dp"
+                        android:layout_height="42dp" android:id="@+id/btn_privacy"
+                        app:layout_constraintTop_toBottomOf="@+id/textView18"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="17dp"
+                        android:layout_marginTop="25dp" android:background="@drawable/bgrate"
+                        android:fontFamily="@font/gotham_medium"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

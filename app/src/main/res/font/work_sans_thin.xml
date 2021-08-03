@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Seyed on 8/3/21, 6:23 PM
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 8/3/21, 6:03 PM
+  ~  */
+  -->
+
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:fontProviderAuthority="com.google.android.gms.fonts"
+        app:fontProviderPackage="com.google.android.gms"
+        app:fontProviderQuery="name=Work Sans&amp;weight=100"
+        app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
+</font-family>

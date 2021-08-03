@@ -1,0 +1,47 @@
+<!--
+  ~ /**
+  ~  * Created by Seyed on 8/3/21, 6:23 PM
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 8/3/21, 6:03 PM
+  ~  */
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/widget_margin"
+>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="125dp" app:srcCompat="@drawable/a_clouds" android:id="@+id/iv_ico"
+            android:layout_marginTop="190dp" android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"/>
+    <TextView
+            android:id="@+id/appwidget_text_temp"
+            android:layout_height="wrap_content"
+            android:text="13°"
+            android:textColor="#ffffff"
+            android:textSize="69sp"
+            android:fontFamily="sans-serif-light" android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:visibility="visible"
+            android:layout_marginTop="70dp" android:layout_marginStart="-1dp" android:layout_width="match_parent"
+            android:layout_alignParentStart="true" android:layout_alignParentTop="true"
+            android:paddingBottom="5dp" android:paddingRight="5dp"
+            android:layout_marginBottom="8dp" android:textAlignment="center" android:alpha="0.85"/>
+    <TextView
+            android:id="@+id/appwidget_text_description"
+            android:text="Gliwice\nUpdated at 16:50"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="16sp"
+            android:paddingStart="5dp" android:paddingEnd="5dp"
+            android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="visible"
+            android:layout_marginStart="0dp" android:layout_alignParentStart="true"
+            android:layout_marginTop="343dp"
+            android:textAlignment="center" android:textColor="@color/colorWhite" android:layout_alignParentTop="true"
+            android:lineSpacingExtra="9dp" android:alpha="0.85"/>
+
+</RelativeLayout>

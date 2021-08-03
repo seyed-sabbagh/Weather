@@ -1,0 +1,25 @@
+<!--
+  ~ /**
+  ~  * Created by Seyed on 8/3/21, 6:23 PM
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 8/3/21, 6:03 PM
+  ~  */
+  -->
+
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar"/>
+
+    <style name="MyEditTextTheme">
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#1ED760</item>
+        <item name="colorControlHighlight">#1ED760</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/bottom_to_top</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+
+</resources>

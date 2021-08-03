@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Seyed on 8/3/21, 6:23 PM
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 8/3/21, 6:03 PM
+  ~  */
+  -->
+
+<resources>
+    <color name="colorPrimaryLightGrey">#242222</color>
+    <color name="colorAccentGreen">#1ED760</color>
+    <color name="colorPressedGreen">#12873c</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorDarkGrey">#707070</color>
+
+    <color name="colorSetupSalad">#98C09B</color>
+    <color name="colorSetupSaladPressed">#82bf87</color>
+    <color name="colorSetupGreen">#54C05B</color>
+    <color name="colorSetupGreenPressed">#1d7523</color>
+
+    <color name="colorPurpleShimmer">#5f5663</color>
+    <color name="colorGreyShimmer">#211C24</color>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Seyed on 8/3/21, 6:23 PM
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 8/3/21, 6:03 PM
+  ~  */
+  -->
+
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:minWidth="100dp"
+                    android:minHeight="180dp"
+                    android:updatePeriodMillis="1800000"
+                    android:previewImage="@drawable/widgets_preview_ugly"
+                    android:initialLayout="@layout/widget_d"
+                    android:resizeMode="horizontal|vertical"
+                    android:widgetCategory="home_screen"
+                    android:initialKeyguardLayout="@layout/widget_d">
+</appwidget-provider>

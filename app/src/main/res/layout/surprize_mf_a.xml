@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by Seyed on 8/3/21, 6:23 PM
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 8/3/21, 6:03 PM
+  ~  */
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="340dp"
+            android:layout_height="553dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="15dp" android:background="@android:color/transparent"
+            android:id="@+id/cl_sup_a">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" tools:srcCompat="@tools:sample/avatars"
+                android:id="@+id/iv_sup_a" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/textView14"/>
+        <TextView
+                android:text="Viktor's unlocked!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView14"
+                android:fontFamily="@font/gotham_medium" android:textSize="25sp"
+                android:textColor="@color/colorPrimaryLightGrey" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/btn_tryem" android:layout_marginBottom="40dp"/>
+        <Button
+                android:text="Try 'em out"
+                android:layout_width="143dp"
+                android:layout_height="51dp" android:id="@+id/btn_tryem"
+                android:background="@drawable/intro_btn_pt_style"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="65dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<!--
+  ~ /**
+  ~  * Created by Seyed on 8/3/21, 6:23 PM
+  ~  * Copyright (c) 2021 . All rights reserved.
+  ~  * Last modified 8/3/21, 6:03 PM
+  ~  */
+  -->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:shareInterpolator="false">
+    <translate
+            android:fromXDelta="100%" android:toXDelta="0%"
+            android:fromYDelta="0%" android:toYDelta="0%"
+            android:duration="400" />
+</set>
